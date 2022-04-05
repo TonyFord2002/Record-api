@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const Records = reuqire('../models/records')
+const Records = require('../models/records')
 
 //Index
 router.get('/', (req,res)=>{
