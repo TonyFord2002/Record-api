@@ -10,7 +10,7 @@ router.get('/', (req,res)=>{
 })
 
 //Delete
-router.delete('/:id', (req,re)=>{
+router.delete('/:id', (req,res)=>{
     Records.findByIdAndRemove(req.params.id, (err, deletedRecord)=>{
         res.json(deletedRecord)
     })
